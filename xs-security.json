@@ -1,0 +1,38 @@
+{
+  "xsappname": "risk-management",
+  "tenant-mode": "dedicated",
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "https://e6814f4atrial-dev-risk-management.cfapps.us10-001.hana.ondemand.com/login/callback"
+    ]
+  },
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.RiskViewer",
+      "description": "RiskViewer"
+    },
+    {
+      "name": "$XSAPPNAME.RiskManager",
+      "description": "RiskManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "RiskViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "RiskManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskManager"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
